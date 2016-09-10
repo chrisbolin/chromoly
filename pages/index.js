@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
+import { filterPages } from '../utils'
 
 export default class Index extends React.Component {
   render () {
@@ -11,19 +12,15 @@ export default class Index extends React.Component {
       <DocumentTitle title={config.siteTitle}>
         <div>
           <h1>
-            Hi people
+            Chromoly Magazine
           </h1>
-          <p>Welcome to your new Gatsby site</p>
-          <h2>Below are some pages showing different capabilities built-in to Gatsby</h2>
-          <h3>Supported file types</h3>
-          <ul>
-            <li>
-              <Link to={prefixLink('/markdown/')}>Markdown</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/react/')}>JSX (React components)</Link>
-            </li>
-          </ul>
+          <div>
+            {filterPages(this.props.route.pages).map((page) => (
+              <div key={page.path}>
+                <Link to={prefixLink(page.path)}>{page.data.title}</Link>
+              </div>
+            ))}
+          </div>
         </div>
       </DocumentTitle>
     )

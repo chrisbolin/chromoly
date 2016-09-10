@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
@@ -13,36 +12,18 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom
-          style={{
-            background: 'lightgray',
-          }}
-        >
-          <Container
+        <Headroom>
+          <Link
+            to={prefixLink('/')}
             style={{
-              maxWidth: 960,
-              paddingTop: 0,
+              color: 'black',
+              textDecoration: 'none',
             }}
           >
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-              }}
-            >
-              Gatsby!!!
-            </Link>
-          </Container>
+            → Chromoly
+          </Link>
         </Headroom>
-        <Container
-          style={{
-            maxWidth: 960,
-            paddingTop: 0,
-          }}
-        >
-          {this.props.children}
-        </Container>
+        {this.props.children}
       </div>
     )
   },
