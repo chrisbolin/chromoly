@@ -6,6 +6,7 @@ import { config } from 'config'
 
 export default class Index extends React.Component {
   render () {
+    console.log(this.props);
     return (
       <DocumentTitle title={config.siteTitle}>
         <div>
@@ -21,36 +22,6 @@ export default class Index extends React.Component {
             </li>
             <li>
               <Link to={prefixLink('/react/')}>JSX (React components)</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/coffee-react/')}>CJSX (Coffeescript React components)</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/html/')}>HTML</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/json/')}>JSON</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/yaml/')}>YAML</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/toml/')}>TOML</Link>
-            </li>
-          </ul>
-          <h3>Supported CSS processors</h3>
-          <ul>
-            <li>
-              <Link to={prefixLink('/postcss/')}>PostCSS</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/css-modules/')}>CSS Modules</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/sass/')}>Sass</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/less/')}>Less</Link>
             </li>
           </ul>
         </div>
