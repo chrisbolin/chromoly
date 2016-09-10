@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "chromoly",
+  "description": "Chromoly Magazine",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chris Bolin <bolin.chris@gmail.com>",
   "dependencies": {
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
