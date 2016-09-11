@@ -1,7 +1,7 @@
 ---
 title: Again
 author: Chris Bolin
-issue: 1
+theme: oatmeal
 ---
 
 From the dirt path she saw the distant highway; it filled the forest with a muffled amorphous roar, an organic buzz. But its sound did not match its sight. No, the small cars sped alone - red, silver, black, blue - each a discrete mass; only together did their tiny voices melt into the deep, even chorus.

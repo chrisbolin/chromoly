@@ -3,8 +3,11 @@ import React from 'react';
 import styles from './post.module.scss';
 
 export default ({post}) => (
-  <div className={styles['issue-' + post.issue]}>
-    <h1>{post.title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: post.body }} />
+  <div className={styles[post.theme]}>
+    <header>
+      <h1>{post.title}</h1>
+      <h5>{post.author}</h5>
+    </header>
+    <article dangerouslySetInnerHTML={{ __html: post.body }} />
   </div>
 );

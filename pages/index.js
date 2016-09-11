@@ -7,7 +7,6 @@ import { filterPages } from '../utils'
 
 export default class Index extends React.Component {
   render () {
-    console.log(this.props);
     return (
       <DocumentTitle title={config.siteTitle}>
         <div>

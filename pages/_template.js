@@ -1,28 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
+import Header from '../components/header'
 
 module.exports = React.createClass({
-  propTypes () {
-    return {
-      children: React.PropTypes.any,
-    }
-  },
   render () {
+    const showHeader = (this.props.location.pathname !== "/");
     return (
       <div>
-        <Headroom>
-          <Link
-            to={prefixLink('/')}
-            style={{
-              color: 'black',
-              textDecoration: 'none',
-            }}
-          >
-            → Chromoly
-          </Link>
-        </Headroom>
+        {showHeader ? <Header/> : null}
         {this.props.children}
       </div>
     )
