@@ -1,17 +1,26 @@
 .header {
+  font-family: "Asul";
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
   a {
-    font-family: "Asul";
-    position: fixed;
-    top: 20px;
-    right: 0;
-    width: 100%;
+    padding: 20px;
+    display: block;
     text-decoration: none;
     color: #CC0000;
-    text-align: right;
-    background-color: #f6f6f6;
-    padding: 20px;
+
+    span {
+      border-bottom: 1px solid rgba(255,255,255,0);
+      transition: all 200ms ease-out;
+    }
+
+    transition: all 200ms ease-out;
+
     &:hover {
       color: black;
+      span {
+        border-bottom-color: currentColor;
+      }
     }
   }
 }
