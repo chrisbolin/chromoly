@@ -1,6 +1,7 @@
 ---
 title: How To Prepare Oatmeal
 author: Chris Bolin
+issue: 2
 ---
 
 The kitchen sink is an emotional and domestic bellwether: has yesterday been resolved? Can today begin unburdened? Or are there outstanding debts, pans caked with bits of a meal already forgotten?
